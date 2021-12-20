@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/Webicon.png">
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/mainstyle.css">
     <title>Gio Hang</title>
 </head>
+
 <body>
     <secsion class="top">
         <div class="container">
@@ -57,7 +60,7 @@
                             <a href="DangNhap.html" class="fas fa-user"></a>
                         </li>
                         <li>
-                            <a href="GioHang.html"  class="fas fa-shopping-cart"></a>
+                            <a href="GioHang.html" class="fas fa-shopping-cart"></a>
                         </li>
                     </ul>
                 </div>
@@ -81,67 +84,43 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="cart-content row">
-                <div class="cart-content-left">
-                    <table>
-                        <tr>
-                            <th>Sản phẩm</th>
-                            <th>Tên sản phẩm</th>
-                            
-                            <th>SL</th>
-                            <th>Thành tiền</th>
-                        </tr>
-                        <tr>
-                            <td><img src="image/11.jpg" alt=""></td>
-                            <td>
-                                <p>Su Hào</p>
-                            </td>
-                            
-                            <td><input type="number" value="1" min="1"></td>
-                            <td>
-                                <p>22.000<sup>đ</sup></p>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="cart-content-right">
-                    <table>
-                        <tr>
-                            <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
-                        </tr>
-                        <tr>
-                            <td>TỔNG SẢN PHẨM</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>TỔNG TIỀN HÀNG</td>
-                            <td>
-                                <p>25.000<sup>đ</sup></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>TẠM TÍNH</td>
-                            <td>
-                                <p style="color: black; font-weight: bold;">25.000<sup>đ</sup></p>
-                            </td>
-                        </tr>
-                    </table>
-                    <!-- <div class="cart-content-right-text">
-                         <p>Bạn sẽ được miễn phí ship khi đơn hàng của bạn có tổng giá trị trên 2.000.000 đ</p>
-                        <p style="color: red; font-weight: bold;">Mua thêm <span style="font-size: 18px;">131.000đ</span> để được miễn phí SHIP</p> -->
-                    </div> -->
-                    <div class="cart-content-right-button">
-                        <button><a href="index.html">TIẾP TỤC MUA SẮM</a></button>
-                        <button><a href="GiaoHang.html">TIẾP TỤC</a></button>
-                    </div>
-                    <div class="cart-content-right-dangnhap">
-                        <p>Hãy <a href="">Đăng nhập</a> tài khoản của bạn để tích điểm thành viên</p>
+        <main>
+            <h1>Chi tiết đơn hàng</h1>
+            <table id="listSanPham" border="">
+                <tbody id="bodySanpham">
+                    <tr>
+                        <th>Hình SP</th>
+                        <th>Tên SP</th>
+                        <th>Số Kg</th>
+                        <th>Giá</th>
+                        <th>Thành tiền</th>
+                        <th></th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id="tongThanhTien" align="right" colspan="6">Tổng thành tiền (A) = </td>
+                    </tr>
+                    <script>
+                    </script>
+                    <tr>
+                        <td id="chietKhau" align="right" colspan="6">Chiết khấu (B) = </td>
+                    </tr>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <tr>
+                        <td id="thue" align="right" colspan="6">Thuế (C) = 10% x (A-B) = </td>
+                    </tr>
+                    <tr>
+                        <td id="tongDonHang" align="right" colspan="6">Tổng đơn hàng = A - B + C = </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="6" align="center">
+                            <button>Xác nhận đơn hàng</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
     </section>
 
     <!-- -------------------------Footer -->

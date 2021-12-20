@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/Webicon.png">
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/mainstyle.css">
     <title>Danh mục</title>
 </head>
+
 <body>
     <secsion class="top">
         <div class="container">
@@ -43,8 +46,12 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>Tin tức</li>
-                        <li>Thông tin</li>
+                        <li>
+                            <a href="#">Tin Tức</a>
+                        </li>
+                        <li>
+                            <a href="#">Thông Tin</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="top-menu-icons">
@@ -57,7 +64,7 @@
                             <a href="DangNhap.html" class="fas fa-user"></a>
                         </li>
                         <li>
-                            <a href="GioHang.html"  class="fas fa-shopping-cart"></a>
+                            <a href="GioHang.html" class="fas fa-shopping-cart"></a>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +72,7 @@
         </div>
     </secsion>
     <!-- --------------------------Cartegory -->
-    <section class="cartegory">
+    <div class="cartegory">
         <div class="container">
             <div class="cartegory-top row">
                 <p>Trang chủ</p> <span>⟶</span>
@@ -122,10 +129,13 @@
                     <div class="cartegory-right-content row">
                         <div class="cartegory-right-content-item">
                             <img src="image/PhanLoaiRau/RAL-cai-cau-vong.jpg" alt="">
-                            <a href="ChiTietSanPham.html">
-                                <h1>Cải cầu vòng</h1>
-                            </a>
+                            <h1>Cải cầu vòng</h1>
                             <p>140.000<sup>đ</sup>/kg</p>
+                            <span>
+                                Số lượng(kg): 
+                                <input id="sp001" type="number" max="100" min="0" value="0" size="3">
+                                <button onclick="addCart('sp001')">Đặt hàng</button>
+                            </span>
                         </div>
                         <div class="cartegory-right-content-item">
                             <img src="image/PhanLoaiRau/RAL-bap-cai.jpg" alt="">
@@ -133,6 +143,11 @@
                                 <h1>Bắp cải</h1>
                             </a>
                             <p>21.000<sup>đ</sup>/kg</p>
+                            <span>
+                                Số lượng(kg): 
+                                <input id="sp002" type="number" max="100" min="0" value="0" size="3">
+                                <button onclick="addCart('sp002')">Đặt hàng</button>
+                            </span>
                         </div>
                         <div class="cartegory-right-content-item">
                             <img src="image/PhanLoaiRau/RAL-cai-thia.jpg" alt="">
@@ -140,6 +155,11 @@
                                 <h1>Cải thìa</h1>
                             </a>
                             <p>22.000<sup>đ</sup>/kg</p>
+                            <span>
+                                Số lượng(kg): 
+                                <input id="sp003" type="number" max="100" min="0" value="0" size="3">
+                                <button onclick="addCart('sp003')">Đặt hàng</button>
+                            </span>
                         </div>
                         <div class="cartegory-right-content-item">
                             <img src="image/PhanLoaiRau/RAL-la-vung.png" alt="">
@@ -147,6 +167,11 @@
                                 <h1>Lá vừng</h1>
                             </a>
                             <p>120.000<sup>đ</sup>/kg</p>
+                            <span>
+                                Số lượng(kg): 
+                                <input id="sp004" type="number" max="100" min="0" value="0" size="3">
+                                <button onclick="addCart('sp004')">Đặt hàng</button>
+                            </span>
                         </div>
                         <div class="cartegory-right-content-item">
                             <img src="image/PhanLoaiRau/RAL-rau-ma.jpg" alt="">
@@ -154,6 +179,11 @@
                                 <h1>Rau má</h1>
                             </a>
                             <p>20.000<sup>đ</sup>/kg</p>
+                            <span>
+                                Số lượng(kg): 
+                                <input id="sp005" type="number" max="100" min="0" value="0" size="3">
+                                <button onclick="addCart('sp005')">Đặt hàng</button>
+                            </span>
                         </div>
                         <div class="cartegory-right-content-item">
                             <img src="image/PhanLoaiRau/RAL-rau_chan_vit.jpg" alt="">
@@ -161,6 +191,11 @@
                                 <h1>Cải bó xôi</h1>
                             </a>
                             <p>70.000<sup>đ</sup>/kg</p>
+                            <span>
+                                Số lượng(kg): 
+                                <input id="sp006" type="number" max="100" min="0" value="0" size="3">
+                                <button onclick="addCart('sp006')">Đặt hàng</button>
+                            </span>
                         </div>
                         <div class="cartegory-right-content-item">
                             <img src="image/PhanLoaiRau/RAL-tan-o.jpeg" alt="">
@@ -168,6 +203,11 @@
                                 <h1>Tần ô</h1>
                             </a>
                             <p>50.000<sup>đ</sup>/kg</p>
+                            <span>
+                                Số lượng(kg): 
+                                <input id="sp007" type="number" max="100" min="0" value="0" size="3">
+                                <button onclick="addCart('sp007')">Đặt hàng</button>
+                            </span>
                         </div>
                         <div class="cartegory-right-content-item">
                             <img src="image/PhanLoaiRau/RAL-den-khoang.jpeg" alt="">
@@ -175,23 +215,22 @@
                                 <h1>Rau dền khoang</h1>
                             </a>
                             <p>35.000<sup>đ</sup>/kg</p>
+                            <span>
+                                Số lượng(kg): 
+                                <input id="sp008" type="number" max="100" min="0" value="0" size="3">
+                                <button onclick="addCart('sp008')">Đặt hàng</button>
+                            </span>
                         </div>
                     </div>
 
-
-                    <div class="cartegory-right-bottom row">
-                        <!-- <div class="cartegory-right-bottom-items">
-                            <p>Hiện thị 2 <span>|</span> 4 sản phẩm</p>
-                        </div> -->
-                        <div class="cartegory-right-bottom-items">
-                            <p><span>« </span>1 2 3 4 5<span> »</span> Trang cuối</p>
-                        </div>
+                    <div>
+                        <p><span>« </span><a href="DM_RauAnLa.html">1</a><span> »</span></p>
                     </div>
                 </div>
 
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- -------------------------Footer -->
     <section class="footer">

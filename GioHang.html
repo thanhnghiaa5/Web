@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <secsion class="top">
+    <div class="top">
         <div class="container">
             <div class="row">
                 <div class="top-logo">
@@ -27,9 +27,6 @@
                             <ul class="top-menu-item">
                                 <li>
                                     <a href="DM_RauAnLa.html">Rau ăn lá</a>
-                                </li>
-                                <li>
-                                    <a href="DM_RauAnQua.html">Rau ăn quả</a>
                                 </li>
                                 <li>
                                     <a href="DM_RauAnCu.html">Rau ăn củ</a>
@@ -48,8 +45,12 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>Tin tức</li>
-                        <li>Thông tin</li>
+                        <li>
+                            <a href="#">Tin Tức</a>
+                        </li>
+                        <li>
+                            <a href="#">Thông Tin</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="top-menu-icons">
@@ -68,7 +69,7 @@
                 </div>
             </div>
         </div>
-    </secsion>
+    </div>
     <!-- -------------------------cart---------------- -->
     <section class="cart">
         <div class="container">
@@ -87,41 +88,43 @@
             </div>
         </div>
         <main>
-            <h1>Chi tiết đơn hàng</h1>
-            <table id="listSanPham" border="">
-                <tbody id="bodySanpham">
+            <h1 id="nut">
+                Chi tiết đơn hàng
+            </h1>
+            <table align="center">
+                <thead>
                     <tr>
-                        <th>Hình SP</th>
-                        <th>Tên SP</th>
-                        <th>Số Kg</th>
-                        <th>Giá</th>
-                        <th>Thành tiền</th>
-                        <th></th>
+                        <td>Hình SP</td>
+                        <td>Tên SP</td>
+                        <td>Số Lượng SP</td>
+                        <td>Giá</td>
+                        <td>Thành Tiền</td>
+                        <td></td>
                     </tr>
-                </tbody>
+                </thead>
+                <tbody> </tbody>
                 <tfoot>
                     <tr>
-                        <td id="tongThanhTien" align="right" colspan="6">Tổng thành tiền (A) = </td>
-                    </tr>
-                    <script>
-                    </script>
-                    <tr>
-                        <td id="chietKhau" align="right" colspan="6">Chiết khấu (B) = </td>
-                    </tr>
+                        <td colspan="6" class="sumPrice"></td>
 
-                    <tr>
-                        <td id="thue" align="right" colspan="6">Thuế (C) = 10% x (A-B) = </td>
                     </tr>
                     <tr>
-                        <td id="tongDonHang" align="right" colspan="6">Tổng đơn hàng = A - B + C = </td>
+                        <td colspan="6" class="discount"></td>
+
                     </tr>
                     <tr>
-                        <td align="center" colspan="6" align="center">
-                            <button>Xác nhận đơn hàng</button>
-                        </td>
+                        <td colspan="6" class="tax"></td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="result"></td>
+
                     </tr>
                 </tfoot>
             </table>
+            <div align="center" id="nut">
+                <button><a href="GiaoHang.html"><p>XÁC NHẬN ĐƠN HÀNG</p></a></button>
+            </div>
         </main>
     </section>
 
@@ -161,9 +164,7 @@
         </div>
     </section>
 
-    <script type="text/javascript" src="js/javascript.js"></script>
-    <script src="js/script.js"></script>
-
+    <script src="js/donhang.js"></script>
 
 
 </body>

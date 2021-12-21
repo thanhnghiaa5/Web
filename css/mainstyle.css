@@ -18,9 +18,10 @@ a {
     color: #000000;
 }
 
-div a:hover {
+
+/* div a:hover {
     color: #FF981D;
-}
+} */
 
 .space-between {
     justify-content: space-between;
@@ -93,15 +94,16 @@ div a:hover {
 
 .top-menu-item {
     position: absolute;
-    width: 200px;
-    top: 100px;
+    width: 120px;
+    top: 90px;
     display: none;
     opacity: 0;
     transition: all 0.5s ease;
     background-color: #ffff;
     height: auto!important;
     padding: 6px;
-    border: 1px solid #dddddd;
+    /* border: 1px solid #dddddd; */
+    border-radius: 10px 10px 15px 15px;
 }
 
 .top-menu-items ul li:hover .top-menu-item {
@@ -185,7 +187,7 @@ div a:hover {
 .sliders {
     padding-bottom: 20px;
     overflow: hidden;
-    width: 100vw;
+    width: auto;
 }
 
 .aspect-ratio-169 {
@@ -397,14 +399,15 @@ div a:hover {
     cursor: pointer;
 }
 
-span {
+
+/* span {
     font-size: 14px;
     font-family: var(--main-text-font);
 }
 
 span>button {
     font-family: var(--main-text-font);
-}
+} */
 
 .cartegory-right-content {
     margin-top: 20px;
@@ -414,7 +417,7 @@ span>button {
 .cartegory-right-content-item {
     width: calc(25% - 12px);
     text-align: center;
-    padding: 12px 0;
+    padding: 15px 0;
 }
 
 .cartegory-right-content-item h1 {
@@ -432,6 +435,13 @@ span>button {
 .cartegory-right-content-item p {
     font-size: 14px;
     font-family: var(--main-text-font);
+    margin-top: 6px;
+}
+
+.cartegory-right-content-item div {
+    font-size: 14px;
+    font-family: var(--main-text-font);
+    margin-top: 10px;
 }
 
 .cartegory-right-bottom {
@@ -545,30 +555,70 @@ span>button {
 
 /* Main */
 
-main {
-    display: grid;
-    border: 1px solid #ccc7c8;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 0 5px;
-    grid-area: main-cell;
-    margin: 0 auto;
-    padding: 0 5px;
+table {
+    border: 1px double #dddddd;
+    font-family: arial, sans-serif;
+    /* border-collapse: collapse; */
     width: 1024px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-main.one__col {
-    grid-template-areas: 'left-cell articel-cell right-cell';
+td,
+th {
+    border: 1px double #dddddd;
+    text-align: center;
+    padding: 8px;
 }
 
-main.two__cols-left {
-    grid-template-areas: 'articel-cell right-cell';
-    grid-template-columns: 3fr 1fr;
+.result,
+.sumPrice,
+.discount,
+.tax {
+    text-align: right;
 }
 
-main.two__cols-right {
-    grid-template-areas: 'left-cell articel-cell';
-    grid-template-columns: 1fr 3fr;
+.trash-icon {
+    padding: 4px;
+    background-color: #cddc39;
+    color: #ed4190;
+    cursor: pointer;
+    height: 19px;
+}
+
+.img-product {
+    padding: 15px;
+}
+
+.img-product {
+    height: 90px;
+    width: 90px;
+}
+
+.img__products {
+    text-align: center;
+    height: 90px;
+    width: 90px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: unset;
+}
+
+#nut {
+    text-align: center;
+    margin-top: 15px;
+    font-family: var(--main-text-font);
+}
+
+#nut button {
+    height: 35px;
+    padding: 0 20px;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid black
 }
 
 
@@ -619,7 +669,9 @@ main.two__cols-right {
 
 .delivery-content-left {
     width: 60%;
-    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
 
 .delivery-content-left p {
@@ -686,49 +738,6 @@ main.two__cols-right {
 .delivery-content-left-button button:hover {
     background-color: black;
     color: #fff;
-}
-
-.delivery-content-right {
-    width: 40%;
-    padding-left: 12px;
-    border-left: 2px solid #dddddd;
-    height: auto;
-}
-
-.delivery-content-right table {
-    width: 100%;
-    font-family: var(--main-text-font);
-    font-size: 12px;
-    text-align: center;
-}
-
-.delivery-content-right table tr th:first-child {
-    text-align: left;
-}
-
-.delivery-content-right table tr th {
-    padding-bottom: 12px;
-    border-bottom: 2px solid #dddddd;
-}
-
-.delivery-content-right table tr th:last-child {
-    text-align: right;
-}
-
-.delivery-content-right table tr td {
-    padding: 6px 0;
-}
-
-.delivery-content-right table tr:nth-child(4) {
-    border-top: 2px solid #dddddd;
-}
-
-.delivery-content-right table tr td:last-child {
-    text-align: right;
-}
-
-.delivery-content-right table tr td:first-child {
-    text-align: left;
 }
 
 
@@ -842,10 +851,11 @@ label {
     border: 2px solid black
 }
 
-.payment-content-right-payment button:hover {
+
+/* .payment-content-right-payment button:hover {
     background-color: black;
     color: #fff;
-}
+} */
 
 
 /* dang ky */

@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/login.css">
     <title>FV Đăng ký</title>
+    <script type="text/javascript" src="js/login.js"></script>
 </head>
 
 <body>
@@ -70,13 +71,15 @@
     <main>
         <div class="login-page">
             <div class="form">
-                <form>
+                <form name="regfr" action="reg.php" method="POST" onsubmit="return frmValidate()">
                     <h1 algin="center">Đăng ký</h1>
-                    <input type="text" placeholder="name" />
-                    <input type="password" placeholder="password" />
-                    <input type="text" placeholder="email address" />
-                    <button>create</button>
-
+                    <input name="hoten" type="text" placeholder="Nhập Họ Tên">
+                    <input name="tuoi" type="text" placeholder="Nhập Tuổi">
+                    <input name="sdt" type="tel" placeholder="Nhập Số Điện Thoại">
+                    <input name="email" type="text" placeholder="vidu@gmail.com">
+                    <input name="mk" type="password" placeholder="Nhập Mật Khẩu (8 Ký Tự)">
+                    <input name="pre_mk" type="password" placeholder="Nhập Lại Mật Khẩu">
+                    <button type="submit">Đăng ký</button>
                     <p class="message">Đã đăng ký ? <a href="DangNhap.html">Đăng Nhập</a></p>
                 </form>
             </div>

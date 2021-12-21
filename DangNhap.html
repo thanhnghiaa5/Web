@@ -46,8 +46,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>Tin tức</li>
-                        <li>Thông tin</li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Thông tin</a></li>
                     </ul>
                 </div>
                 <div class="top-menu-icons">
@@ -70,14 +70,32 @@
     <main>
         <div class="login-page">
             <div class="form">
-                <form>
+                <form action="index.html" name="formLogin" method="post" onsubmit="return checkAccount()">
                     <h1 align="center">Đăng Nhập</h1>
-                    <input type="text" placeholder="username" />
-                    <input type="password" placeholder="password" />
-                    <button>login</button>
+                    <input type="text" required name="username" placeholder="Nhập Tài Khoản">
+                    <input type="password" required name="password" placeholder="Nhập Mật Khẩu">
+                    <button type="submit">Đăng nhập</button>
                     <p class="message"> <a href="DangKy.html">Quên mật khẩu ?</a></p>
                     <p class="message">Chưa đăng ký ? <a href="DangKy.html">Tạo một tài khoản</a></p>
                 </form>
+                <script>
+                    var text = '{"account":[{"hoten":"NguyenThanhNghia","username":"b1908341","password":"B1908341@123"}]}';
+                    obj = JSON.parse(text);
+                    var frmLog = document.forms['formLogin'];
+                    var tk = frmLog.username;
+                    var mk = frmLog.password;
+
+                    function checkAccount() {
+                        if ((obj.account[0].username == tk.value) && (obj.account[0].password == mk.value)) {
+                            alert("Đăng nhập thành công!");
+                            window.localStorage.setItem("hoten", obj.account[0].hoten);
+                            return true;
+                        } else {
+                            alert("Nhập sai tên đăng nhập hoặc mật khẩu");
+                            return false;
+                        }
+                    }
+                </script>
             </div>
         </div>
     </main>

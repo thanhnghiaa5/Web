@@ -18,6 +18,10 @@ a {
     color: #000000;
 }
 
+div a:hover {
+    color: #FF981D;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -368,4 +372,8 @@ form h1 {
     font-family: "Roboto", sans-serif;
     color: #000000;
     text-decoration: none;
+}
+
+#nut {
+    color: white;
 }

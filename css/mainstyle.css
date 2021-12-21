@@ -399,6 +399,11 @@ div a:hover {
 
 span {
     font-size: 14px;
+    font-family: var(--main-text-font);
+}
+
+span>button {
+    font-family: var(--main-text-font);
 }
 
 .cartegory-right-content {
@@ -426,6 +431,7 @@ span {
 
 .cartegory-right-content-item p {
     font-size: 14px;
+    font-family: var(--main-text-font);
 }
 
 .cartegory-right-bottom {

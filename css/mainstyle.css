@@ -418,12 +418,13 @@ span>button {
     width: calc(25% - 12px);
     text-align: center;
     padding: 15px 0;
+    margin-top: 10px;
 }
 
 .cartegory-right-content-item h1 {
     font-size: 11px;
     font-family: var(--main-text-font);
-    margin-top: 6px;
+    margin-top: 10px;
     color: #333333;
 }
 
@@ -438,7 +439,7 @@ span>button {
     margin-top: 6px;
 }
 
-.cartegory-right-content-item div {
+.cartegory-right-content-item span {
     font-size: 14px;
     font-family: var(--main-text-font);
     margin-top: 10px;
@@ -581,8 +582,8 @@ th {
 
 .trash-icon {
     padding: 4px;
-    background-color: #cddc39;
-    color: #ed4190;
+    background-color: #ffffff;
+    color: #070707;
     cursor: pointer;
     height: 19px;
 }

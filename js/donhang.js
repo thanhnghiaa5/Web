@@ -3,61 +3,58 @@ let getSumPrice = document.querySelector('.sumPrice');
 let getDiscount = document.querySelector('.discount');
 let getTax = document.querySelector('.tax');
 let getResult = document.querySelector('.result');
+let getShip = document.querySelector('.ship');
 
 var itemList = ['soLuongSanPham1', 'soLuongSanPham2', 'soLuongSanPham3',
     'soLuongSanPham4', 'soLuongSanPham5', 'soLuongSanPham6',
-    'soLuongSanPham7', 'soLuongSanPham8', 'soLuongSanPham9',
+    'soLuongSanPham7', 'soLuongSanPham8',
 ]
 var itemProduct = [{
-        "name": "Sữa Chua Vị Kiwi",
+        "name": "Cải cầu vòng",
+        "price": 140000,
+        "photo": "image/PhanLoaiRau/RAL-cai-cau-vong.jpg",
+    },
+    {
+        "name": "Bắp cải",
         "price": 21000,
-        "photo": "images/sanpham/kiwi.jpg"
+        "photo": "image/PhanLoaiRau/RAL-bap-cai.jpg"
     },
     {
-        "name": "Sữa Chua Vị Xoài",
+        "name": "Cải thìa",
         "price": 22000,
-        "photo": "images/sanpham/mango.jpg"
+        "photo": "image/PhanLoaiRau/RAL-cai-thia.jpg"
     },
     {
-        "name": "Sữa Chua Vị Dưa lưới",
-        "price": 23000,
-        "photo": "images/sanpham/cantaloupe.jpg"
+        "name": "Lá vừng",
+        "price": 120000,
+        "photo": "image/PhanLoaiRau/RAL-la-vung.png"
     },
     {
-        "name": "Sữa Chua Vị Mâm Xôi",
-        "price": 24000,
-        "photo": "images/sanpham/blackberry.jpg"
+        "name": "Rau má",
+        "price": 20000,
+        "photo": "image/PhanLoaiRau/RAL-rau-ma.jpg"
     },
     {
-        "name": "Sữa Chua Vị Dâu Tây",
-        "price": 25000,
-        "photo": "images/sanpham/strawberry.jpg"
+        "name": "Cải bó xôi",
+        "price": 70000,
+        "photo": "image/PhanLoaiRau/RAL-rau_chan_vit.jpg"
     },
     {
-        "name": "Sữa Chua Vị Việt Quất",
-        "price": 26000,
-        "photo": "images/sanpham/blueberry.jpg"
+        "name": "Tần ô",
+        "price": 50000,
+        "photo": "image/PhanLoaiRau/RAL-tan-o.jpeg"
     },
     {
-        "name": "Sữa Chua Vị Bưởi",
-        "price": 27000,
-        "photo": "images/sanpham/grapes.jpg"
-    },
-    {
-        "name": "Sữa Chua Vị Táo Xanh",
-        "price": 28000,
-        "photo": "images/sanpham/green-apple.jpg"
-    },
-    {
-        "name": "Sữa Chua Vị Dứa",
-        "price": 29000,
-        "photo": "images/sanpham/pineapple.jpg"
+        "name": "Rau dền khoang",
+        "price": 35000,
+        "photo": "image/PhanLoaiRau/RAL-den-khoang.jpeg"
     }
 ];
 var total = 0;
 var discount = 0;
 var tax = 0;
 var result = 0;
+var ship = 30000;
 // hard code
 itemList.map((item, index) => {
     tableProducts.innerHTML += `
@@ -108,12 +105,14 @@ itemList.map((item, index) => {
         total += cart.detailProducts.price * cart.soLuong;
         discount = getDayDiscount() * total;
         tax = 0.1 * (total - discount);
-        result = total - discount + tax;
+        ship = 30000;
+        result = total - discount + tax + ship;
 
-        getSumPrice.innerHTML = `Tổng Thành Tiền (A) = ${total}`;
-        getDiscount.innerHTML = `Chiết Khấu (B) = ${discount}`;
-        getTax.innerHTML = `Thuế (C) = ${tax}`;
-        getResult.innerHTML = `Tổng Đơn Hàng = ${result}`;
+        getSumPrice.innerHTML = `Tạm Tính= ${total} VNĐ`;
+        getDiscount.innerHTML = `Chiết Khấu = ${discount} VNĐ`;
+        getTax.innerHTML = `Thuế VAT (10%) = ${tax} VNĐ`;
+        getShip.innerHTML = `Phí vận chuyển = ${ship} VNĐ`;
+        getResult.innerHTML = `Tổng Tiền = ${result} VNĐ`;
 
     }
 

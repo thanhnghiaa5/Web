@@ -576,8 +576,11 @@ th {
 .result,
 .sumPrice,
 .discount,
-.tax {
+.tax,
+.ship {
     text-align: right;
+    font-family: var(--main-text-font);
+    font-size: 15px;
 }
 
 .trash-icon {

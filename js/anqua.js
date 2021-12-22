@@ -34,9 +34,9 @@ arrOrderProducts.map((item, index) => {
     })
     //hard code
 var itemList = [{
-        "name": "Cải cầu vòng",
-        "price": 140000,
-        "photo": "image/PhanLoaiRau/RAL-cai-cau-vong.jpg",
+        "name": "Bơ",
+        "price": 35000,
+        "photo": "image/PhanLoaiRau/RAQ-bo.png",
     },
     {
         "name": "Bắp cải",
@@ -77,8 +77,8 @@ var itemList = [{
 
 
 
-for (let i = 0; i < 9; i++) {
-    if (localStorage.length < 9) {
+for (let i = 0; i < 8; i++) {
+    if (localStorage.length < 8) {
         localStorage.setItem(`soLuongSanPham${i + 1}`, JSON.stringify({
             "detailProducts": itemList[i],
             "soLuong": 0

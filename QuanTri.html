@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <title>Danh mục</title>
+</head>
+<body>
+    <secsion class="top">
+        <div class="container">
+            <div class="row">
+                <div class="top-logo">
+                    <img src="image/logo1-remove.png" width="80%">
+                </div>
+                <div class="top-menu-items">
+                    <ul>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li>Sản Phẩm
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="DM_RauAnLa.html">Rau ăn lá</a>
+                                </li>
+                                <li>
+                                    <a href="DM_RauAnQua.html">Rau ăn quả</a>
+                                </li>
+                                <li>
+                                    <a href="DM_RauAnCu.html">Rau ăn củ</a>
+                                </li>
+                                <li>
+                                    <a href="DM_RauAnThan.html">Rau ăn thân<nav></nav></a>
+                                </li>
+                                <li>
+                                    <a href="DM_RauAnHoa.html">Rau ăn hoa</a>
+                                </li>
+                                <li>
+                                    <a href="DM_RauGiaVi.html">Rau gia vị</a>
+                                </li>
+                                <li>
+                                    <a href="DM_Nam.html">Nấm</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Tin tức</li>
+                        <li><a href="QuanTri.html"></a>Quản trị</li>
+                    </ul>
+                </div>
+                <div class="top-menu-icons">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="tìm kiếm">
+                            <i class="fas fa-search"></i>
+                        </li>
+                        <li>
+                            <a href="DangNhap.html" class="fas fa-user"></a>
+                        </li>
+                        <li>
+                            <a href="GioHang.html"  class="fas fa-shopping-cart"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </secsion>
+    <!-- --------------------------Cartegory -->
+    <section class="cartegory">
+        <div class="container">
+            <div class="cartegory-top row">
+                <p>Trang chủ</p> <span>⟶</span>
+                <p>Quản trị</p> <span>⟶</span>
+                <p>Sản phẩm</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="cartegory-left">
+                    <ul>
+                        <li class="cartegory-left-li "><a href="#">Sản Phẩm</a></li>
+                        <li class="cartegory-left-li "><a href="#">Loại sản phẩm</a>
+                        <li class="cartegory-left-li "><a href="#">Hóa đơn</a>
+                        <li class="cartegory-left-li "><a href="#">Doanh thu</a>
+                        <li class="cartegory-left-li "><a href="#">Thống kê</a>
+                        
+                    </ul>
+
+                </div>
+
+                <div class="cartegory-right">
+                    <div class="quantri">
+                        <a href="ThemSP.html"><button> Thêm sản phẩm</button></a>
+                    </div>
+                    <div class="cart-content-right">
+                        
+                        <table class="list" border="1" id="list">
+                            <tr>
+                                <!-- <th>Mã SP</th> -->
+                                <th>Hình ảnh</th>
+                                <th>Tên SP</th>
+                                <th>Loại SP</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Trạng thái</th>
+                                <th>Thao tác</th>
+                            </tr>
+                            <tr>
+                                <td><img width="50" src="image/PhanLoaiRau/RAL-cai-cau-vong.jpg"></td>
+                                <td>Cải cầu vồng</td>
+                                <td>Rau ăn lá</td>
+                                <td>10</td>
+                                <td>140000<sub>đ</sub></td>
+                                <td>
+                                    <select>
+                                        <option value="">On</option>
+                                        <option value="">Off</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img width="50" src="image/PhanLoaiRau/RAL-bap-cai.jpg"></td>
+                                <td>Bắp cải</td>
+                                <td>Rau ăn lá</td>
+                                <td>10</td>
+                                <td>140000<sub>đ</sub></td>
+                                <td>
+                                    <select>
+                                        <option value="">On</option>
+                                        <option value="">Off</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img width="50" src="image/PhanLoaiRau/RAL-cai-thia.jpg"></td>
+                                <td>Cải thìa</td>
+                                <td>Rau ăn lá</td>
+                                <td>10</td>
+                                <td>140000<sub>đ</sub></td>
+                                <td>
+                                    <select>
+                                        <option value="">On</option>
+                                        <option value="">Off</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img width="50" src="image/PhanLoaiRau/RAL-den-khoang.jpeg"></td>
+                                <td>Dền khoang</td>
+                                <td>Rau ăn lá</td>
+                                <td>10</td>
+                                <td>140000<sub>đ</sub></td>
+                                <td>
+                                    <select>
+                                        <option value="">On</option>
+                                        <option value="">Off</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img width="50" src="image/PhanLoaiRau/RAL-la-vung.png"></td>
+                                <td>Lá vừng</td>
+                                <td>Rau ăn lá</td>
+                                <td>10</td>
+                                <td>140000<sub>đ</sub></td>
+                                <td>
+                                    <select>
+                                        <option value="">On</option>
+                                        <option value="">Off</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img width="50" src="image/PhanLoaiRau/RAL-rau-ma.jpg"></td>
+                                <td>Rau má</td>
+                                <td>Rau ăn lá</td>
+                                <td>10</td>
+                                <td>140000<sub>đ</sub></td>
+                                <td>
+                                    <select>
+                                        <option value="">On</option>
+                                        <option value="">Off</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img width="50" src="image/PhanLoaiRau/RAL-rau_chan_vit.jpg"></td>
+                                <td>Cải bó xôi</td>
+                                <td>Rau ăn lá</td>
+                                <td>10</td>
+                                <td>140000<sub>đ</sub></td>
+                                <td>
+                                    <select>
+                                        <option value="">On</option>
+                                        <option value="">Off</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img width="50" src="image/PhanLoaiRau/RAL-tan-o.jpeg"></td>
+                                <td>Tần ô</td>
+                                <td>Rau ăn lá</td>
+                                <td>10</td>
+                                <td>140000<sub>đ</sub></td>
+                                <td>
+                                    <select>
+                                        <option value="">On</option>
+                                        <option value="">Off</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div class="cartegory-right-bottom row">
+                            <div class="cartegory-right-bottom-items">
+                                <div class="cartegory-right-bottom-items">
+                                    <p><span>« </span>1 2 3 4 5 6 <span> »</span> Trang cuối</p>
+                                </div>
+                            </div>
+                        </div>    
+                </div>
+                
+            </div>
+           
+        </div>
+        
+    </section>
+    
+
+    <!-- -------------------------Footer -->
+    <section class="footer">
+        <div class="footer-container">
+            <p>Tải ứng dụng Fresh vegetable</p>
+            <div class="app-google">
+                <a href=""><img src="image/appstore.jpg" alt=""></a>
+                <a href=""> <img src="image/googleplay.jpg" alt=""></a>
+            </div>
+            <p>Nhận bản tin Fresh vegetable</p>
+            <div class="input-email">
+                <input type="text" placeholder="Nhập email của bạn">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="footer-items">
+                <!-- <li>
+                    <a href=""><img src="image/dathongbao.png" alt=""></a>
+                </li> -->
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                </li>
+            </div>
+            <div class="footer-text">
+                Fresh vegetable - DH Can Tho - Khoa CNTT&TT
+            </div>
+            <div class="footer-bottom">
+                ©Fresh vegetable
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

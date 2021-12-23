@@ -39,39 +39,39 @@ var itemList = [{
         "photo": "image/PhanLoaiRau/RAQ-bo.png",
     },
     {
-        "name": "Bắp cải",
-        "price": 21000,
-        "photo": "image/PhanLoaiRau/RAL-bap-cai.jpg"
+        "name": "Bí ngô",
+        "price": 15000,
+        "photo": "image/PhanLoaiRau/RAQ-bi-do.jpg"
     },
     {
-        "name": "Cải thìa",
-        "price": 22000,
-        "photo": "image/PhanLoaiRau/RAL-cai-thia.jpg"
+        "name": "Cà chua",
+        "price": 32000,
+        "photo": "image/PhanLoaiRau/RAQ-ca-chua.png"
     },
     {
-        "name": "Lá vừng",
-        "price": 120000,
-        "photo": "image/PhanLoaiRau/RAL-la-vung.png"
+        "name": "Khổ qua",
+        "price": 45000,
+        "photo": "image/PhanLoaiRau/RAQ-kho-qua.jpg"
     },
     {
-        "name": "Rau má",
-        "price": 20000,
-        "photo": "image/PhanLoaiRau/RAL-rau-ma.jpg"
+        "name": "Dưa chuột",
+        "price": 30000,
+        "photo": "image/PhanLoaiRau/RAQ-dua-chuot-gai.jpg"
     },
     {
-        "name": "Cải bó xôi",
-        "price": 70000,
-        "photo": "image/PhanLoaiRau/RAL-rau_chan_vit.jpg"
+        "name": "Cà tím",
+        "price": 25000,
+        "photo": "image/PhanLoaiRau/RAQ-ca-tim.jpg"
     },
     {
-        "name": "Tần ô",
-        "price": 50000,
-        "photo": "image/PhanLoaiRau/RAL-tan-o.jpeg"
+        "name": "Ớt chuông",
+        "price": 80000,
+        "photo": "image/PhanLoaiRau/RAQ-ot.jpg"
     },
     {
-        "name": "Rau dền khoang",
-        "price": 35000,
-        "photo": "image/PhanLoaiRau/RAL-den-khoang.jpeg"
+        "name": "Mướp",
+        "price": 30000,
+        "photo": "image/PhanLoaiRau/RAQ-muop.jpg"
     }
 ];
 

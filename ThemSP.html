@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/Webicon.png">
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/mainstyle.css">
-   
+    <link rel="stylesheet" href="css/chitietsanpham.css">
+
     <title>Thêm rau</title>
 </head>
+
 <body>
     <secsion class="top">
         <div class="container">
@@ -39,9 +42,7 @@
                                 <li>
                                     <a href="DM_RauGiaVi.html">Rau gia vị</a>
                                 </li>
-                                <li>
-                                    <a href="DM_Nam.html">Nấm</a>
-                                </li>
+
                             </ul>
                         </li>
                         <li>Tin tức</li>
@@ -58,7 +59,7 @@
                             <a href="DangNhap.html" class="fas fa-user"></a>
                         </li>
                         <li>
-                            <a href="GioHang.html"  class="fas fa-shopping-cart"></a>
+                            <a href="GioHang.html" class="fas fa-shopping-cart"></a>
                         </li>
                     </ul>
                 </div>
@@ -68,18 +69,13 @@
     <main>
         <div class="login-page">
             <div class="form">
-                <h1>Thêm Rau</h1>
+                <h1 class="h1">Thêm Rau</h1>
 
-        <table id="t1">
-            <tr>
-                <th>Tên rau:</th>
-                <td><input id="tenrau" required type="text" name="tensp"
-                    placeholder="không rỗng"></td>
-            </tr>
-            <tr>
-                <th>Loại rau:</th>
-                <td>
-                    <select id="loairau" required>
+
+
+                <input id="tenrau" required type="text" name="tensp" placeholder="Tên rau">
+
+                <select id="loairau" required>
                         <option value="">--chọn--</option>
                         <option value="RAL">Rau ăn lá</option>
                         <option value="RAC">Rau ăn củ</option>
@@ -88,70 +84,57 @@
                         <option value="RATo">Rau ăn thân</option>
                         <option value="RGV">Rau gia vị</option>
                         <option value="NAM">Nấm</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <th>Số lượng:</th>
-                <td><input id="sl" required pattern="\d" type="number" name="sl"
-                    placeholder="là số dương"></td>
-            </tr>
-            <tr>
-                <th>Đơn giá:</th>
-                <td><input id="dg" required pattern="\d" type="number" name="dg"
-                    placeholder="là số, đơn vị VNĐ"></td>
-            </tr>
-            <tr>
-                <th>Hình ảnh:</th>
-                <td><input id="ha" required type="file" name="ha"></td>
-            </tr>
-            <tr>
-                <th></th>
-                <td>
-                    <button type="reset">Hủy</button>
-                    <button id="btn" type="submit">Lưu</button>
-                </td>
-            </tr>
+                </select>
 
-        </table>
-    </div>
-</div>
+
+
+
+                <input id="sl" required pattern="\d" type="number" name="sl" placeholder="Số lượng">
+
+                <input id="dg" required pattern="\d" type="number" name="dg" placeholder="Đơn giá VNĐ">
+
+                <td><input id="ha" required type="file" name="ha"></td>
+
+                <button type="submit">Thêm rau</button>
+            </div>
+        </div>
     </main>
     <section class="footer">
-            <div class="footer-container">
-                <p>Tải ứng dụng Fresh vegetable</p>
-                <div class="app-google">
-                    <a href=""><img src="image/appstore.jpg" alt=""></a>
-                    <a href=""> <img src="image/googleplay.jpg" alt=""></a>
-                </div>
-                <p>Nhận bản tin Fresh vegetable</p>
-                <div class="input-email">
-                    <input type="text" placeholder="Nhập email của bạn">
-                    <i class="fas fa-arrow-left"></i>
-                </div>
-                <div class="footer-items">
-                    <!-- <li>
+        <div class="footer-container">
+            <p>Tải ứng dụng Fresh vegetable</p>
+            <div class="app-google">
+                <a href=""><img src="image/appstore.jpg" alt=""></a>
+                <a href=""> <img src="image/googleplay.jpg" alt=""></a>
+            </div>
+            <p>Nhận bản tin Fresh vegetable</p>
+            <div class="input-email">
+                <input type="text" placeholder="Nhập email của bạn">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="footer-items">
+                <!-- <li>
                         <a href=""><img src="image/dathongbao.png" alt=""></a>
                     </li> -->
-                    <li><a href="">Liên hệ</a></li>
-                    <li><a href="">Tuyển dụng</a></li>
-                    <li><a href="">Giới thiệu</a></li>
-                    <li>
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-youtube"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </li>
-                    </li>
-                </div>
-                <div class="footer-text">
-                    Fresh vegetable - DH Can Tho - Khoa CNTT&TT
-                </div>
-                <div class="footer-bottom">
-                    ©Fresh vegetable
-                </div>
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                </li>
             </div>
-        </section>
-    
-        <script src="js/script.js"></script>
-    </body>
+            <div class="footer-text">
+                Fresh vegetable - DH Can Tho - Khoa CNTT&TT
+            </div>
+            <div class="footer-bottom">
+                ©Fresh vegetable
+            </div>
+        </div>
+    </section>
+    <script src="js/sp.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>

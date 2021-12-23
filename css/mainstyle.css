@@ -102,7 +102,7 @@ a {
     background-color: #ffff;
     height: auto!important;
     padding: 6px;
-    /* border: 1px solid #dddddd; */
+    border: 1px solid #dddddd;
     border-radius: 10px 10px 15px 15px;
 }
 
@@ -477,10 +477,6 @@ span>button {
 
 .cartegory-left-li.block ul {
     display: block;
-}
-
-.cartegory-left-li>a a:hover {
-    color: #FF981D;
 }
 
 .cartegory-left ul li ul li a {

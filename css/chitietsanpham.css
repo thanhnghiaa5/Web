@@ -89,8 +89,8 @@ a {
 
 .top-menu-item {
     position: absolute;
-    width: 200px;
-    top: 100px;
+    width: 120px;
+    top: 90px;
     display: none;
     opacity: 0;
     transition: all 0.5s ease;
@@ -98,6 +98,7 @@ a {
     height: auto!important;
     padding: 6px;
     border: 1px solid #dddddd;
+    border-radius: 10px 10px 15px 15px;
 }
 
 .top-menu-items ul li:hover .top-menu-item {
@@ -2089,13 +2090,14 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-family: var(--main-text-font);
 }
 
 .form input {
     font-family: var(--main-text-font);
     outline: 0;
     background: #f2f2f2;
-    width: 100%;
+    width: 90%;
     border: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -2110,7 +2112,8 @@ a {
     text-transform: uppercase;
     outline: 0;
     background: #000000;
-    width: 100%;
+    width: 50%;
+    margin-top: 6px;
     border: 0;
     padding: 15px;
     color: #FFFFFF;
@@ -2127,20 +2130,8 @@ a {
     background: #313531;
 }
 
-.form .message {
-    font-family: var(--main-text-font);
-    margin: 15px 0 0;
-    color: #928d8d;
-    font-size: 12px;
-}
-
-.form .message a {
-    font-family: var(--main-text-font);
-    color: #000000;
-    text-decoration: none;
-}
-
 #t1 {
+    font-family: var(--main-text-font);
     width: 400px;
     border-spacing: 10px;
     text-align: left;

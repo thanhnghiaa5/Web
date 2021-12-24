@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="image/Webicon.png">
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/chitietsanpham.css">
 
@@ -42,7 +41,9 @@
                                 <li>
                                     <a href="DM_RauGiaVi.html">Rau gia vị</a>
                                 </li>
-
+                                <li>
+                                    <a href="DM_Nam.html">Nấm</a>
+                                </li>
                             </ul>
                         </li>
                         <li>Tin tức</li>
@@ -69,13 +70,17 @@
     <main>
         <div class="login-page">
             <div class="form">
-                <h1 class="h1">Thêm Rau</h1>
+                <h1>Thêm Rau</h1>
 
-
-
-                <input id="tenrau" required type="text" name="tensp" placeholder="Tên rau">
-
-                <select id="loairau" required>
+                <table id="t1">
+                    <tr>
+                        <th>Tên rau:</th>
+                        <td><input id="tenrau" required type="text" name="tensp" placeholder="không rỗng"></td>
+                    </tr>
+                    <tr>
+                        <th>Loại rau:</th>
+                        <td>
+                            <select id="loairau" required>
                         <option value="">--chọn--</option>
                         <option value="RAL">Rau ăn lá</option>
                         <option value="RAC">Rau ăn củ</option>
@@ -83,19 +88,31 @@
                         <option value="RAQ">Rau ăn quả</option>
                         <option value="RATo">Rau ăn thân</option>
                         <option value="RGV">Rau gia vị</option>
-                        <option value="NAM">Nấm</option>
-                </select>
+                        
+                    </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Số lượng:</th>
+                        <td><input id="sl" required pattern="\d" type="number" name="sl" placeholder="là số dương"></td>
+                    </tr>
+                    <tr>
+                        <th>Đơn giá:</th>
+                        <td><input id="dg" required pattern="\d" type="number" name="dg" placeholder="là số, đơn vị VNĐ"></td>
+                    </tr>
+                    <tr>
+                        <th>Hình ảnh:</th>
+                        <td><input id="ha" required type="file" name="ha"></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <button type="reset">Hủy</button>
+                            <button id="btn" type="submit">Lưu</button>
+                        </td>
+                    </tr>
 
-
-
-
-                <input id="sl" required pattern="\d" type="number" name="sl" placeholder="Số lượng">
-
-                <input id="dg" required pattern="\d" type="number" name="dg" placeholder="Đơn giá VNĐ">
-
-                <td><input id="ha" required type="file" name="ha"></td>
-
-                <button type="submit">Thêm rau</button>
+                </table>
             </div>
         </div>
     </main>
@@ -133,7 +150,7 @@
             </div>
         </div>
     </section>
-    <script src="js/sp.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 

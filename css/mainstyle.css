@@ -584,7 +584,8 @@ th {
     background-color: #ffffff;
     color: #070707;
     cursor: pointer;
-    height: 19px;
+    height: 22px;
+    margin-top: 15px;
 }
 
 .img-product {
